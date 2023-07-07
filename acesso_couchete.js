@@ -4,7 +4,7 @@ const cliente = {
     cpf: "1111222333"
 }
 
-console.log(`O cliente ${cliente["nome"]} tem ${cliente.idade["idade"]} anos de idade.`)
+console.log(`O cliente ${cliente["nome"]} tem ${cliente.idade} anos de idade.`)
 
 const chave = ["nome", "idade", "cpf", "email"]
 
