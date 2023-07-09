@@ -24,13 +24,15 @@ cliente.enderecos.push({
 cliente.enderecos.push({
     rua: "R. Joseph Ladder",
     numero: 404,
-    apartamento: false
+    apartamento: false,
+    alugueu: 2500
 })
 
 cliente.enderecos.push({
     rua: "R. Sparky deathcap",
     numero: 201,
-    apartamento: false
+    apartamento: false,
+    alugueu: 1000
 })
 
 const residencias = cliente.enderecos.filter(
@@ -43,6 +45,10 @@ const listaApenasApartamentos = cliente.enderecos.filter(
 
 console.log(listaApenasApartamentos)
 
-console.log("-"*100)
+console.log("-----------------------------------------------------------------")
 
 console.log(residencias)
+
+cliente.enderecos.forEach((enderecos) => {
+    console.log(`${enderecos["rua"]} com o número ${enderecos["numero"]}`)
+});

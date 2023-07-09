@@ -8,5 +8,5 @@ const cliente =
 const chave = ["nome", "email", "telefone"]
 
 chave.forEach((chave) => {
-    console.log(`O ${chave} do cliente é ${cliente[chave]}`)
+    console.log(`O ${chave} do cliente é ${cliente["nome"]}`)
 })
